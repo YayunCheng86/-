@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="RGB-input-panel col-5 mr-5">     <!-- 左半邊區塊 -->
+                <h3>RGB</h3>
+                <form id='left-side'>
+                    <div class="d-flex flex-row R-row mb-3">
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">R :</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm" id="R-input">
+                        </div>
+                        <div class="R-color-palette" style="height: 42px; width: 42px; background-color: red;"></div>
+                    </div>                
+                    <div class="d-flex flex-row mb-3 G-row">
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">G :</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm" id="G-input" >
+                        </div>
+                        <div class="G-color-palette" style="height: 42px; width: 42px; background-color: green;"></div>
+                    </div>                  
+                    <div class="d-flex flex-row mb-3 B-row">
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">B :</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" id="B-input">
+                        </div>
+                        <div class="B-color-palette" style="height: 42px; width: 42px; background-color: blue;"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Convert</button>
+                </form>
+            </div>
+            <div class="hex-color-panel col-5">     <!-- 右半邊區塊 -->
+                <h3>Hex</h3>
+                <input type="text" class="form-control" id='hex-color-input' aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" style="width: 40%; height: 13%;" placeholder="example: #abcdef">
+                <div class="converted-outcome mt-3" style="height: 130px; width: 130px; background-color: #abcdef;"></div>
+                <small style='font-size: 0.75rem;'>小提示：在色碼輸入框輸入色碼後，直接按 enter 就會出現對應顏色。</small>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
